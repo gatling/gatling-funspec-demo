@@ -1,6 +1,7 @@
 # Gatling functional tests example project
 
 Example project setup for using the new functional testing functionality coming in Gatling 2.2.0. 
+
 Using it you can writing functional tests in Gatling even easier then before.
 
 Use `sbt test` to run the example
