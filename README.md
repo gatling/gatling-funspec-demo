@@ -23,4 +23,4 @@ However since this project is based on future functionality you will need to clo
     cd gatling-sbt
     sbt publish-local
 
-This project wll be updated once gating 2.2.0 is officially released
+This project wll be updated once Gatling 2.2.0 is officially released
