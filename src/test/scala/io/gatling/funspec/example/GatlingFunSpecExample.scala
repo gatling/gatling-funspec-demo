@@ -11,9 +11,9 @@ class GatlingFunSpecExample extends GatlingHttpFunSpec {
   override def httpConf = super.httpConf.header("MyHeader", "MyValue")
 
   spec {
-    http("Index test")
+    http("Example index.html test")
       .get("/index.html")
-      .check(h1 exists)
+      .check(h1.exists)
   }
 
 }
