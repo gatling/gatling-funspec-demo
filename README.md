@@ -11,6 +11,7 @@ From [GatlingFunSpecExample](src/test/scala/io/gatling/funspec/example/GatlingFu
 
 ```scala
 class GatlingFunSpecExample extends GatlingHttpFunSpec {
+
   val baseURL = "http://example.com"
 
   spec {
