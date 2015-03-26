@@ -11,9 +11,7 @@ From [GatlingFunSpecExample](src/test/scala/io/gatling/funspec/example/GatlingFu
 
 ```scala
 class GatlingFunSpecExample extends GatlingHttpFunSpec {
-
   val baseURL = "http://example.com"
-  override def httpConf = super.httpConf.header("MyHeader", "MyValue")
 
   spec {
     http("Example index.html test")
@@ -24,9 +22,7 @@ class GatlingFunSpecExample extends GatlingHttpFunSpec {
 }
 
 object GatlingFunSpecExample {
-
   def h1 = css("h1")
-
 }
 ```
 
