@@ -37,7 +37,7 @@ However since this project is based on future functionality you will need to clo
 
     # from the gatling-funspec-example directory
     cd ..
-    git clone git@github.com:constantijn/gatling.git
+    git clone git@github.com:gatling/gatling.git
     cd gatling
     sbt publish-local
     cd ..
