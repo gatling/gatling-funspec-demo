@@ -12,9 +12,9 @@ object Build extends Build {
   )
 
   lazy val projectDependencies = Seq(
-    "org.scalatest"                   %% "scalatest"                  % "2.2.3"          % "test",
-//    "io.gatling.highcharts"           % "gatling-charts-highcharts"   % "2.1.4"          % "test",
-    "io.gatling"                      % "gatling-test-framework"      % "2.2.0" % "test"
+    "org.scalatest"                   %% "scalatest"                  % "2.2.3"          % "test,it",
+    "io.gatling.highcharts"           % "gatling-charts-highcharts"   % "2.2.0"          % "test,it",
+    "io.gatling"                      % "gatling-test-framework"      % "2.2.0"          % "test,it"
   )
 
   lazy val root = Project("dhl-parcel-api", file("."))

@@ -33,11 +33,19 @@ object GatlingFunSpecExample {
 
 All you need to do to run the example is clone this repository and then in the project root 
 
-* `sbt test` runs the TraditionalUnitTest
-* `sbt gatling:test`runs the GatlingFunSpecExample
+* `sbt test` runs the TraditionalUnitTest inside `src/test`
+* `sbt gatling:test`runs the GatlingFunSpecExample inside `src/test`
+* `sbt it:test`runs the Integration Test Example io.gatling.funspec.example.GatlingFunSpecExampleIT inside `src/it`
 
+Note: you need to put the `it` scope into the Ivy `projectDependencies` definition in order to make the it tests compile:
 
-However since this project is based on future functionality you will need to clone and build some snapshots to get it to work until Gatling 2.2.0 is officially released
+    lazy val projectDependencies = Seq(
+      "org.scalatest"                   %% "scalatest"                  % "2.2.3"          % "test,it",
+      "io.gatling.highcharts"           % "gatling-charts-highcharts"   % "2.2.0"          % "test,it",
+      "io.gatling"                      % "gatling-test-framework"      % "2.2.0"          % "test,it"
+    )
+
+ # Building from SNAPSHOTs
 
     # from the gatling-funspec-example directory
     cd ..
@@ -49,4 +57,3 @@ However since this project is based on future functionality you will need to clo
     cd gatling-sbt
     sbt publish-local
 
-This project wll be updated once Gatling 2.2.0 is officially released
