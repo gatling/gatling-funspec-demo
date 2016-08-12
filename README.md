@@ -31,7 +31,11 @@ object GatlingFunSpecExample {
 
 # Running the example.
 
-All you need to do to run the example is clone this repository and then `sbt test` in the project root.
+All you need to do to run the example is clone this repository and then in the project root 
+
+* `sbt test` runs the TraditionalUnitTest
+* `sbt gatling:test`runs the GatlingFunSpecExample
+
 
 However since this project is based on future functionality you will need to clone and build some snapshots to get it to work until Gatling 2.2.0 is officially released
 
