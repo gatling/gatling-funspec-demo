@@ -33,17 +33,17 @@ object GatlingFunSpecExample {
 
 All you need to do to run the example is clone this repository and then in the project root 
 
-* `sbt test` runs the `TraditionalUnitTest` inside `src/test`
-* `sbt gatling:test`runs the `GatlingFunSpecExample` inside `src/test`
-* `sbt it:test` runs the Integration Test `TraditionalUnitTest` inside `src/it`
-* `sbt gatling-it:test`runs the Integration Test Example `io.gatling.funspec.example.GatlingFunSpecExampleIT` inside `src/it`
+* `sbt test` runs `io.gatling.funspec.example.TraditionalUnitTest` in `src/test` with Scalatest
+* `sbt gatling:test`runs `io.gatling.funspec.example.GatlingFunSpecExample` in `src/test` with Gatling
+* `sbt it:test` runs `io.gatling.funspec.example.TraditionalUnitTest` in `src/it` with Scalatest
+* `sbt gatling-it:test`runs `io.gatling.funspec.example.GatlingFunSpecExampleIT` in `src/it` with Gatling
 
 Note: you need to put the `it` scope into the Ivy `projectDependencies` definition in order to make the it tests compile:
 
     lazy val projectDependencies = Seq(
-      "org.scalatest"                   %% "scalatest"                  % "2.2.3"          % "test,it",
-      "io.gatling.highcharts"           % "gatling-charts-highcharts"   % "2.2.0"          % "test,it",
-      "io.gatling"                      % "gatling-test-framework"      % "2.2.0"          % "test,it"
+      "org.scalatest"                   %% "scalatest"                  % "3.0.4"          % "test,it",
+      "io.gatling.highcharts"           % "gatling-charts-highcharts"   % "2.3.0"          % "test,it",
+      "io.gatling"                      % "gatling-test-framework"      % "2.3.0"          % "test,it"
     )
 
  # Building from SNAPSHOTs
