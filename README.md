@@ -33,9 +33,10 @@ object GatlingFunSpecExample {
 
 All you need to do to run the example is clone this repository and then in the project root 
 
-* `sbt test` runs the TraditionalUnitTest inside `src/test`
-* `sbt gatling:test`runs the GatlingFunSpecExample inside `src/test`
-* `sbt it:test`runs the Integration Test Example io.gatling.funspec.example.GatlingFunSpecExampleIT inside `src/it`
+* `sbt test` runs the `TraditionalUnitTest` inside `src/test`
+* `sbt gatling:test`runs the `GatlingFunSpecExample` inside `src/test`
+* `sbt it:test` runs the Integration Test `TraditionalUnitTest` inside `src/it`
+* `sbt gatling-it:test`runs the Integration Test Example `io.gatling.funspec.example.GatlingFunSpecExampleIT` inside `src/it`
 
 Note: you need to put the `it` scope into the Ivy `projectDependencies` definition in order to make the it tests compile:
 
