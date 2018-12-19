@@ -1,4 +1,4 @@
-lazy val root = Project("gatling-funspec-example", file("."))
+lazy val root = Project("gatling-funspec-demo", file("."))
   .enablePlugins(GatlingPlugin)
   .settings(buildSettings: _*)
   .settings(libraryDependencies ++= projectDependencies)
