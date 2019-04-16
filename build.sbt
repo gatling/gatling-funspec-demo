@@ -5,7 +5,7 @@ lazy val root = Project("gatling-funspec-demo", file("."))
 
 lazy val buildSettings = Seq(
   organization := "io.gatling.funspec",
-  version := "3.1.0.1",
+  version := "3.1.1",
   scalaVersion := "2.12.8"
 )
 
