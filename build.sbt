@@ -5,12 +5,12 @@ lazy val root = Project("gatling-funspec-demo", file("."))
 
 lazy val buildSettings = Seq(
   organization := "io.gatling.funspec",
-  version := "3.1.1",
+  version := "3.1.2",
   scalaVersion := "2.12.8"
 )
 
 lazy val projectDependencies = Seq(
   "org.scalatest"                   %% "scalatest"                  % "3.0.7"      % "test,it",
-  "io.gatling.highcharts"           % "gatling-charts-highcharts"   % "3.1.0.1"    % "test,it",
-  "io.gatling"                      % "gatling-test-framework"      % "3.1.0.1"    % "test,it"
+  "io.gatling.highcharts"           % "gatling-charts-highcharts"   % "3.1.2"    % "test,it",
+  "io.gatling"                      % "gatling-test-framework"      % "3.1.2"    % "test,it"
 )
