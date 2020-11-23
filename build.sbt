@@ -3,14 +3,16 @@ lazy val root = Project("gatling-funspec-demo", file("."))
   .settings(buildSettings: _*)
   .settings(libraryDependencies ++= projectDependencies)
 
+val gatlingVersion = "3.4.2"
+
 lazy val buildSettings = Seq(
   organization := "io.gatling.funspec",
-  version := "3.4.1",
+  version := gatlingVersion,
   scalaVersion := "2.12.12"
 )
 
 lazy val projectDependencies = Seq(
-  "org.scalatest"                  %% "scalatest"                   % "3.2.2"    % "test,it",
-  "io.gatling.highcharts"           % "gatling-charts-highcharts"   % "3.4.0"    % "test,it",
-  "io.gatling"                      % "gatling-test-framework"      % "3.4.0"    % "test,it"
+  "org.scalatest"                  %% "scalatest"                   % "3.2.3"    % "test,it",
+  "io.gatling.highcharts"           % "gatling-charts-highcharts"   % gatlingVersion    % "test,it",
+  "io.gatling"                      % "gatling-test-framework"      % gatlingVersion    % "test,it"
 )
