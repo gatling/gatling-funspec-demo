@@ -15,11 +15,9 @@ class GatlingFunSpecExample extends GatlingHttpFunSpec {
       .get("/index.html")
       .check(h1.exists)
   }
-
 }
 
 object GatlingFunSpecExample {
 
   def h1 = css("h1")
-
 }
