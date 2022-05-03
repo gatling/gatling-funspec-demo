@@ -1,8 +1,4 @@
 # Gatling functional tests example project
 
-Use `sbt test` to run the example
-
-# Example code
-
-From [GatlingFunSpecExample](src/test/scala/io/gatling/funspec/example/GatlingFunSpecExample.scala)
+Use `sbt Gatling/test` `sbt GatlingIt/test` or  to run the example
 
