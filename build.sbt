@@ -3,7 +3,7 @@ lazy val root = Project("gatling-funspec-demo", file("."))
   .settings(buildSettings: _*)
   .settings(libraryDependencies ++= projectDependencies)
 
-val gatlingVersion = "3.9.0"
+val gatlingVersion = "3.9.1"
 
 lazy val buildSettings = Seq(
   organization := "io.gatling.funspec",
