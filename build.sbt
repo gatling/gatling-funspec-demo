@@ -12,7 +12,7 @@ lazy val buildSettings = Seq(
 )
 
 lazy val projectDependencies = Seq(
-  "org.scalatest"                  %% "scalatest"                   % "3.2.16"          % "test,it",
+  "org.scalatest"                  %% "scalatest"                   % "3.2.17"          % "test,it",
   "io.gatling.highcharts"           % "gatling-charts-highcharts"   % gatlingVersion    % "test,it",
   "io.gatling"                      % "gatling-test-framework"      % gatlingVersion    % "test,it"
 )
