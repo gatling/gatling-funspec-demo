@@ -8,7 +8,7 @@ val gatlingVersion = "3.10.4"
 lazy val buildSettings = Seq(
   organization := "io.gatling.funspec",
   version := gatlingVersion,
-  scalaVersion := "2.13.12"
+  scalaVersion := "2.13.13"
 )
 
 lazy val projectDependencies = Seq(
